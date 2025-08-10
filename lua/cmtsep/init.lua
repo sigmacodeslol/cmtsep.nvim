@@ -198,11 +198,6 @@ function M.setup(opts)
 			end
 		end
 	end
-	vim.keymap.set("n", opts.key, M.insert_comment_block, {
-		noremap = true,
-		silent = true,
-		desc = "Insert beautified comment block separator",
-	})
 	vim.api.nvim_create_user_command("Cmtsep", function(cmd_opts)
 		local args = vim.split(cmd_opts.args, " ")
 		local action = args[1]
