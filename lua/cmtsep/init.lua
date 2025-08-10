@@ -198,7 +198,7 @@ function M.setup(opts)
 			end
 		end
 	end
-	vim.keymap.set("n", "<Leader>cb", M.insert_comment_block, {
+	vim.keymap.set("n", opts.key, M.insert_comment_block, {
 		noremap = true,
 		silent = true,
 		desc = "Insert beautified comment block separator",
